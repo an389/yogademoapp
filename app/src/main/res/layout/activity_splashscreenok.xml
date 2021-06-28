@@ -10,18 +10,20 @@
 
     <ImageView
         android:id="@+id/appsplash"
-        android:layout_width="135dp"
-        android:layout_height="135dp"
-        android:src="@drawable/splash_icon"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="99dp"
 
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true" />
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:src="@drawable/splash_icon" />
 
     <TextView
         android:id="@+id/appname"
@@ -33,7 +35,7 @@
         android:textColor="#FFF"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="115dp"
 
 
         />
