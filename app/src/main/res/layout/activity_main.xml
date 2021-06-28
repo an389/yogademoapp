@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#FFF"
+    android:background="#90f"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="com.example.yogademoapp.MainActivity">
 
     <androidx.appcompat.widget.Toolbar
       android:id="@+id/toolBar"
@@ -42,6 +42,7 @@
              android:orientation="vertical">
 
              <LinearLayout
+                 android:onClick="beforeage18"
                  android:layout_width="fill_parent"
                  android:layout_height="150.0dp"
                  android:layout_gravity="center"
@@ -122,6 +123,7 @@
              </LinearLayout>
 
              <Button
+                 android:id="@+id/startyoga1"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
                  android:layout_margin="10.0dp"
@@ -141,6 +143,7 @@
               android:orientation="vertical">
 
               <LinearLayout
+                  android:onClick="afterage18"
                   android:layout_width="fill_parent"
                   android:layout_height="150.0dp"
                   android:layout_gravity="center"
@@ -221,6 +224,7 @@
               </LinearLayout>
 
               <Button
+                  android:id="@+id/startyoga2"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
                   android:layout_margin="10.0dp"
@@ -278,17 +282,19 @@
                   </LinearLayout>
 
 
-                  <LinearLayout
-                      android:layout_width="fill_parent"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="2.0">
+                 <LinearLayout
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="2.0">
 
-                      <ImageView
-                          android:layout_width="fill_parent"
-                          android:layout_height="wrap_content"
-                          android:src="@drawable/food"
-                          />
-                  </LinearLayout>
+
+                     <ImageView
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/food"/>
+
+
+                 </LinearLayout>
 
                   <LinearLayout
                       android:layout_width="wrap_content"
