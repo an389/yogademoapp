@@ -27,11 +27,13 @@ public class Splashscreenok extends AppCompatActivity {
         setContentView(R.layout.activity_splashscreenok);
 
         ImageView imageView=findViewById(R.id.appsplash);
-        up=AnimationUtils.loadAnimation(getApplicationContext(),R.id.)
+        up=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.up);
+        imageView.setAnimation(up);
 
 
         TextView textView=findViewById(R.id.appname);
-        down=AnimationUtils.loadAnimation(getApplicationContext(),R.id.)
+        down=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.down);
+        textView.setAnimation(down);
 
 
         new Handler().postDelayed(new Runnable() {
