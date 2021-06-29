@@ -3,20 +3,30 @@ package com.example.yogademoapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button button1,button2;
+
+    SharedPreferences sharedPreferences;
+    public static final String fileName="login";
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        sharedPreferences=getSharedPreferences(fileName, Context.MODE_PRIVATE);
 
 
         Toolbar toolbar=findViewById(R.id.toolBar);
@@ -41,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+
+        AlarmHandler alarmHandler=new AlarmHandler(this);
+        alarmHandler.cancelAlarmManager();
+        alarmHandler.setAlarmManager();
+
+        Toast.makeText(this, "Alarm set!", Toast.LENGTH_SHORT).show();
 
     }
 
