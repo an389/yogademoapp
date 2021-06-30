@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,SecondActivity2.class);
+                Intent intent=new Intent(MainActivity.this, Help_Yoga.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void afterage18(View view) {
-        Intent intent=new Intent(MainActivity.this,SecondActivity2.class);
+        Intent intent=new Intent(MainActivity.this, SecondActivity2.class);
         startActivity(intent);
 
     }
@@ -83,5 +83,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
 
+    }
+
+    public void help(View view) {
+        Intent intent=new Intent(MainActivity.this,Help_Yoga.class);
+        startActivity(intent);
     }
 }
